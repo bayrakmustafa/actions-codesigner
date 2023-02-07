@@ -24,7 +24,7 @@ jobs:
           mkdir ${GITHUB_WORKSPACE}/artifacts
 
       - name: Sign Files
-        uses: bayrakmustafa/actions-codesigner@main
+        uses: bayrakmustafa/actions-codesigner@v1
         with:
           command: sign
           username: ${{secrets.ES_USERNAME}}
